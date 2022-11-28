@@ -1,0 +1,524 @@
+*{
+    margin: 0;padding: 0;
+
+
+}
+html{
+    font-size: 68%;
+    overflow-x: hidden;
+}
+.main{
+    background-color:  hsl(0, 0%, 100%);
+    width:100vw;
+    height: 61rem;
+    margin-top: 4rem;
+    /* z-index: 34; */
+}
+.cartitem{
+    height: 18rem;
+    width: 33rem;
+   background-color: white;
+    position: relative;
+    left: 88rem;
+    top: -3rem;
+    box-shadow: -4px 4px 30px -1px rgba(0,0,0,0.46);
+    z-index: 1;
+    display: none;
+    border-radius: 1rem;
+}
+.cartitem hr{
+    z-index: 123;
+}
+.cartitem p{
+    width: 12rem;
+    font-size: 2rem;
+    font-family: 'Kumbh Sans';
+    font-weight: 200;
+   
+}
+.cartitem strong{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.cartitem img{
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+    border-radius: 1rem;
+}
+#checkbtn{
+    padding: 1rem 9rem;
+    border: none;
+    border-radius: 1rem;
+    position: relative;
+    top: 4rem;
+    left: 3rem;
+    background-color: hsl(26, 100%, 55%);
+    font-family: 'Kumbh Sans';
+    color: white;
+    font-weight: 600;
+}
+.empty{
+    position: relative;
+    top: -3rem;
+    left: 10rem;
+}
+.empty p{
+    font-size: 2rem;
+    margin-top: 8rem;
+}
+.navbar{
+
+width: 100%;
+height: 7rem;
+margin-top: 2rem;
+
+
+}
+#deleteicon{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: 7rem;
+    left: 23rem;
+    color: rebeccapurple;
+}
+.checkout h6{
+    position: absolute;
+    left: 10rem;
+    top: 6rem;
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans';
+}
+.checkout{
+    display: none;
+}
+
+
+
+#number{
+    position: relative;
+    top: 0rem;
+    font-size: 2rem;
+    left: 8rem;
+}
+.navbar ul{
+    display: flex;
+    margin: 0rem 24rem;
+    width: 34rem;
+    margin-top: -0.5rem;
+}
+ul li{
+    margin: 0rem 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: 500;
+    font-family: 'Kumbh Sans', sans-serif;
+position: relative;
+}
+.logo{
+    position: relative;
+    top: -0.5rem;
+    left: -91rem;
+
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    left: 105rem;
+    top: -3rem;
+    justify-content: space-around;
+}
+.profileimg{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 3rem;
+}
+hr{
+    width: 106rem;
+    position: relative;
+    top: 8rem;
+    left: 9rem;
+}
+.article-area{
+  
+    width: 34rem;
+    height: 35rem;
+    position: relative;
+    top: 16rem;
+    left: 13rem;
+}
+.mainimg{
+    height: 30rem;
+ 
+    width: 31rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+   
+}
+.thumbnail{
+   
+    width: 34rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -3rem;
+    justify-content: space-evenly;
+    margin: 3rem 0rem;
+}
+.thumbnailimg{
+ 
+    width: 6.2rem;
+    height: 6.2rem;
+    cursor: pointer;
+  
+}
+.productimg{
+    width: 100%;
+    height: 100%;
+   border-radius: 1rem;
+   opacity: 1;
+   position: relative;
+   border: 0.1rem white;
+
+}
+.mainproduct{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: relative;
+    top: -9rem;
+
+}
+.productdetail{
+    width: 49rem;
+    height: 31rem;
+ 
+    display: block;
+    position: relative;
+    left: 59rem;
+    top: -19rem;
+}
+.productdetail header{
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: hsl(26, 100%, 55%);
+}
+.productdetail h1{
+    font-size: 4rem;
+    margin-top: 1rem;
+ font-family:    'Alexandria', sans-serif;
+}
+.productdetail p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    width: 35rem;
+    word-spacing: initial;
+}
+.productdetail h3{
+    margin: 1rem;
+    font-size: 2.3rem;
+    font-weight: 900;
+ 
+
+    width: 7rem;
+}
+.productdetail .discount{
+    position: relative;
+    top: -3rem;
+    left: 10rem;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    background:hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.4rem;
+   font-family: bolder;
+
+}
+.originalprice{
+   margin-left: -2rem;
+    font-size: 1.4rem;
+}
+.carttags{
+    margin-top: 4rem;
+    padding: 0rem 2rem;
+    height: 5rem;
+    width: 39rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -3rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    cursor: pointer;
+
+}
+.itemcount{
+    width: 1.5rem;
+    height: 1.6rem;
+    background: rgb(247, 191, 38);
+    border-radius: 1rem;
+    position: relative;
+    top: -7.4rem;
+    left: 110.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 700;
+
+}
+#quantity{
+    font-size: 1.7rem;
+}
+#btn{
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    border-left: none;
+    font-weight: 500;
+    position: relative;
+    top: -4.1rem;
+    left: 30rem;
+
+}
+
+.carticon{
+    margin: auto;
+    position: relative;
+    top: 0.4rem;
+    left: -0.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+  
+}
+.productimg:hover{
+    opacity: 0.5;
+    border-color:red;
+}
+#img1{
+    opacity: 0.5;
+}
+#plus ,#minus{
+    padding: 1rem 1rem;
+}
+#menuicon{
+    position: relative;
+    top: 1.8rem;
+    padding: 1rem;
+    left: 1rem;
+    background: transparent;
+    border: none;
+
+}
+.sidebar{
+    position: relative;
+    top: -3rem;
+    left: -2rem;
+    z-index: 12;
+    height: 106rem;
+    width: 64rem;
+    display: none;
+}
+.lightbox{
+   height: 1rem;
+   width: 1rem;
+display: none;
+}
+#cross{
+    position: relative;
+    top: 6rem;
+    z-index: 23;
+    left: 2rem;
+    width: 3rem;
+    height: 1rem;
+    background: transparent;
+    border: none;
+    display: none;
+}
+.next{
+    position: relative;
+    top: -42rem;
+    left: 40rem;
+    size: a5;
+    color: white;
+    display: none;
+}
+.prev{
+    z-index: 1222222;
+    position: relative;
+    top: 14.3rem;
+    left: -11rem;
+    color: white;
+    display: none;
+}
+.show{
+    display: block;
+}
+
+ul li:hover::before{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    left: 0;
+    bottom: -8rem;
+    background-color: orange;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    margin-top: -9rem;
+
+
+
+}
+#separator{
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:375px) {
+  html{
+    font-size: 150%;
+  }  
+
+.productdetail{
+    left: 2rem;
+    top: 25rem
+}
+.mainproduct{
+    width: 61rem;
+    height: 51rem;
+    border-radius: 0;
+    position: relative;
+    top: -13rem;
+    left: -14rem;
+}
+.navbar ul{
+display: none;
+}
+.img{
+    left: 47rem;
+    top: 1rem;
+}
+.profileimg{
+    width: 5rem;
+    height: 5rem;
+}
+.iconcart{
+    width: 2rem;
+    height: 2rem;
+}
+.logo{
+    top: -0.5rem;
+    left: -33rem;
+    width: 12rem;
+    height: 3rem;
+}
+.navbar{
+    margin-top: 0;
+}
+
+.thumbnail{
+    display: none;
+}
+
+/* #btn{
+    top: -0.1rem;
+    left: 10.9rem;
+    padding: 0.8rem 17rem;
+} */
+#btn {
+    top: -0.1rem;
+    left: 7.9rem;
+    padding: 0.8rem 17rem;
+    font-size: 2rem;
+}
+.carttags{
+    margin-left: 12rem;
+    height: 3rem;
+}
+
+.lightbox{
+display: block;
+}
+
+hr{
+    width: 0;
+}
+.next{
+    display: block;
+
+}
+.prev{
+    display: block;
+}
+.productdetail header {
+    font-size: 2.5rem;
+}
+.cartitem{
+    left: 29rem;
+    top: 1rem;
+}
+.cartitem {
+    left: 8rem;
+    top: 1rem;
+    width: 49rem;
+    height: 23rem;
+}
+.cartitem img {
+    width: 9rem;
+    height: 9rem;
+    top: 5rem;
+    left: 1rem;
+   
+}
+.checkout h6 {
+  
+    left: 12rem;
+    top: 8rem;
+    font-size: 2.5rem;
+    font-family: 'Kumbh Sans';
+}
+#checkbtn {
+    padding: 1rem 14rem;
+    top: 5rem;
+    left: 7rem;
+    font-size: 2rem;
+}
+#deleteicon {
+   
+    height: 3rem;
+  
+    top: 0rem;
+    left: 37rem;
+    color: rgba(20, 18, 18, 0.911);
+}
+#number{
+  
+    top: 2rem;
+    font-size: 3rem;
+    left: 13rem;
+}
+
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria&family=Kumbh+Sans:wght@100&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+  
+   
+    <nav class="navbar">
+      <div class="lightbox">
+        <button id="cross" onclick="hide()">+</button>
+        <button id="menuicon" onclick="showsidebar()"><i class="fa-solid fa-bars fa-5x"></i></button>
+        <img src="./design/mobile-menu.jpg" alt="" class="sidebar">
+      </div>
+      <ul>
+        
+        <li>Collections</li>
+        <li> Women</li>
+        <li> About</li>
+        <li> Contact</li>
+      </ul>
+      <hr>
+      <div class="img">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+        <img src="./images/icon-cart (copy 1).svg" alt="" class="iconcart">
+        <img src="./images/image-avatar.png" alt="" class="profileimg">
+      </div>
+      <div class="itemcount">
+       <span id="Icount">0</span>
+      </div>
+      <div class="cartitem">
+        <p><strong>Cart</strong>  </p>
+        <hr id="separator">
+       
+        
+        <div class="checkout">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="imgage">
+          <h6>Fall Limited Edition Sneakers 125.00 *<span id="count">4</span></h6>
+          <img src="./images/icon-delete.svg" alt="" id="deleteicon" onclick="deleteItem()">
+          <span id="number">  $256 </span> 
+
+          <button id="checkbtn" >Checkout</button>
+         
+        </div>
+        <div class="empty">
+
+          <p>cart is empty </p>
+ 
+ 
+         
+       </div>
+       
+      
+       </div>
+   
+    </nav>
+
+    <div class="article-area">
+
+      <div class="mainimg">
+        <i class="fa-solid fa-circle-chevron-left fa-5x prev"></i>
+        <img src="./images/image-product-1.jpg" alt="mainimg" class="mainproduct" id="showimg">
+        <i class="fa-solid fa-circle-chevron-right fa-5x next"></i>
+      </div>
+      <div class="thumbnail">
+        <div class="thumbnailimg"><img src="./images/image-product-1-thumbnail.jpg" alt="imgage" class="productimg" id="img1">
+        </div>
+        <div class="thumbnailimg"><img src="./images/image-product-2-thumbnail.jpg" alt="imgage" class="productimg" id="img2">
+        </div>
+        <div class="thumbnailimg"><img src="./images/image-product-3-thumbnail.jpg" alt="imgage" class="productimg" id = "img3">
+        </div>
+        <div class="thumbnailimg"><img src="./images/image-product-4-thumbnail.jpg" alt="imgage" class="productimg" id="img4">
+        </div>
+      </div>
+
+
+    </div>
+
+    <article class="productdetail">
+      <header>SNEAKER COMPANY</header>
+      <h1>Fall Limited Edition Sneakers </h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <h3 class="price"> $125.00</h3>
+      <span class="discount"> 50%</span>
+      <span class="originalprice"> <s>$250.00</s> </span>
+      <div class="carttags">
+        <i><img src="./images/icon-minus.svg" alt="image" id="plus" onclick="minu()"></i>
+        <span id="quantity">0</span>
+        <i id="minus"> <img src="./images/icon-plus.svg" alt="image" onclick="add()"></i><br>
+      </div>
+      <button id="btn" onclick="price()"><img src="./images/icon-cart.svg" alt="" class="carticon"> Add to cart</button>
+    </article>
+
+   
+
+
+
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
